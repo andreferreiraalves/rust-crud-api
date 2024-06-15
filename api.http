@@ -1,0 +1,34 @@
+POST http://localhost:8080/human
+content-type: application/json
+
+{
+    "first_name" : "andré",
+    "last_name": "ferreira",
+    "age": 34
+}
+
+###
+
+get http://localhost:8080/human
+content-type: application/json
+
+###
+
+get http://localhost:8080/human/2
+content-type: application/json
+
+###
+
+PUT http://localhost:8080/human/2
+content-type: application/json
+
+{
+    "first_name" : "andré",
+    "last_name": "ferreira",
+    "age": 200
+}
+
+###
+
+DELETE  http://localhost:8080/human/1
+content-type: application/json
